@@ -59,6 +59,8 @@ describe('HJSON', () => {
 
             obj = HJSON.parse(hjson)
 
+            console.log(obj)
+
             json = HJSON.stringify(obj)
         })
 
