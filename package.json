@@ -1,6 +1,6 @@
 {
   "name": "hybrid-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hybrid JavaScript Object Notation (HJSON) parser / stringifier",
   "main": "src/HJSON.js",
   "directories": {
@@ -25,6 +25,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1nside0ut/HJON.git"
+    "url": "git+https://github.com/1nside0ut/hybrid-json.git"
   }
 }
