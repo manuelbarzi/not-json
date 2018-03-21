@@ -1,0 +1,23 @@
+{
+  "name": "JON",
+  "version": "0.0.0",
+  "description": "A flexible Javascript Object Notation (JON) parser / stringifier",
+  "main": "src/JON.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [
+    "JSON",
+    "flex",
+    "flexible"
+  ],
+  "author": "manuelbarzi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1nside0ut/JON.git"
+  }
+}
