@@ -1,15 +1,15 @@
 const assert = require('assert')
 const fs = require('fs')
-const JON = require('../src/JON')
+const HJSON = require('../src/HJSON')
 
-describe('JON', () => {
+describe('HJSON', () => {
     describe('parse JSON', () => {
         let json, obj
 
         before(() => {
             json = fs.readFileSync('tests/example.json', 'utf8')
 
-            obj = JON.parse(json)
+            obj = HJSON.parse(json)
         })
 
         it('should parse JSON', () => {
@@ -27,16 +27,16 @@ describe('JON', () => {
         })
     })
 
-    describe('parse JON', () => {
-        let jon, obj
+    describe('parse HJSON', () => {
+        let hjson, obj
 
         before(() => {
-            jon = fs.readFileSync('tests/example.jon', 'utf8')
+            hjson = fs.readFileSync('tests/example.hjson', 'utf8')
 
-            obj = JON.parse(jon)
+            obj = HJSON.parse(hjson)
         })
 
-        it('should parse JON', () => {
+        it('should parse HJSON', () => {
             assert(obj, 'should obj be defined')
 
             assert.equal(obj.a, 1, 'should property match')
@@ -52,14 +52,14 @@ describe('JON', () => {
     })
 
     describe('stringify object', () => {
-        let jon, obj, json
+        let hjson, obj, json
 
         before(() => {
-            jon = fs.readFileSync('tests/example.jon', 'utf8')
+            hjson = fs.readFileSync('tests/example.hjson', 'utf8')
 
-            obj = JON.parse(jon)
+            obj = HJSON.parse(hjson)
 
-            json = JON.stringify(obj)
+            json = HJSON.stringify(obj)
         })
 
         it('should stringify object', () => {

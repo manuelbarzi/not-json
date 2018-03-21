@@ -1,8 +1,8 @@
 {
-  "name": "JON",
+  "name": "hybrid-json",
   "version": "0.0.0",
-  "description": "A flexible Javascript Object Notation (JON) parser / stringifier",
-  "main": "src/JON.js",
+  "description": "Hybrid JavaScript Object Notation (HJSON) parser / stringifier",
+  "main": "src/HJSON.js",
   "directories": {
     "test": "tests"
   },
@@ -10,6 +10,13 @@
     "test": "mocha tests"
   },
   "keywords": [
+    "HJSON",
+    "hybrid",
+    "javascript",
+    "object",
+    "notation",
+    "js",
+    "node",
     "JSON",
     "flex",
     "flexible"
@@ -18,6 +25,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1nside0ut/JON.git"
+    "url": "git+https://github.com/1nside0ut/HJON.git"
   }
 }
