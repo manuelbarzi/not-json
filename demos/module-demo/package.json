@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hybrid-json": "0.0.5"
+    "hybrid-json": "0.0.6"
   }
 }
