@@ -1,11 +1,20 @@
-function parse(jon) {
-    var obj
-    eval('obj = ' + jon)
-    return obj
-}
+'use strict';
 
-if (typeof module === 'object')
-    module.exports = {
+var HJSON;
+(function () {
+    function parse(hjson) {
+        var obj;
+
+        eval('obj = ' + hjson);
+
+        return obj;
+    }
+
+    HJSON = {
         parse,
         stringify: JSON.stringify
-    }
+    };
+})();
+
+if (typeof module === 'object')
+    module.exports = HJSON

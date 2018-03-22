@@ -1,6 +1,6 @@
 {
   "name": "hybrid-json",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Hybrid JavaScript Object Notation (HJSON) parser / stringifier",
   "main": "src/HJSON.js",
   "directories": {

@@ -15,14 +15,14 @@ $ npm i hybrid-json
 Usage:
 
 ```js
-var hjson = require('hybrid-json')
+var HJSON = require('hybrid-json')
 
-var obj = hjson.parse('{ a: 1, b: "2", c: \'3\', "d": [1, "2", \'3\'] }')
+var obj = HJSON.parse('{ a: 1, b: "2", c: \'3\', "d": [1, "2", \'3\'] }')
 
 console.log(obj)
 // { a: 1, b: '2', c: '3', d: [ 1, '2', '3' ] }
 
-var json = hjson.stringify(obj)
+var json = HJSON.stringify(obj)
 
 console.log(json)
 // {"a":1,"b":"2","c":"3","d":[1,"2","3"]}
