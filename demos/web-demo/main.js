@@ -1,5 +1,3 @@
-const notJSON = require('not-json')
-
 const notJson = '{ a: 1, b: "2", c: \'3\', "d": [1, "2", \'3\'] }'
 
 const obj = notJSON.parse(notJson)

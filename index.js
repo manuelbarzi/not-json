@@ -1,20 +1,20 @@
 'use strict';
 
-var HJSON;
+var notJSON;
 (function () {
-    function parse(hjson) {
+    function parse(notJson) {
         var obj;
 
-        eval('obj = ' + hjson);
+        eval('obj = ' + notJson);
 
         return obj;
     }
 
-    HJSON = {
+    notJSON = {
         parse,
         stringify: JSON.stringify
     };
 })();
 
 if (typeof module === 'object')
-    module.exports = HJSON
+    module.exports = notJSON

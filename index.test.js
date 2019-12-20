@@ -1,15 +1,15 @@
 const assert = require('assert')
 const fs = require('fs')
-const HJSON = require('../src/HJSON')
+const notJSON = require('.')
 
-describe('HJSON', () => {
+describe('notJSON', () => {
     describe('parse JSON', () => {
         let json, obj
 
         before(() => {
-            json = fs.readFileSync('tests/example.json', 'utf8')
+            json = fs.readFileSync('example.json', 'utf8')
 
-            obj = HJSON.parse(json)
+            obj = notJSON.parse(json)
         })
 
         it('should parse JSON', () => {
@@ -27,16 +27,16 @@ describe('HJSON', () => {
         })
     })
 
-    describe('parse HJSON', () => {
-        let hjson, obj
+    describe('parse not-JSON', () => {
+        let notJson, obj
 
         before(() => {
-            hjson = fs.readFileSync('tests/example.hjson', 'utf8')
+            notJson = fs.readFileSync('example.not-json', 'utf8')
 
-            obj = HJSON.parse(hjson)
+            obj = notJSON.parse(notJson)
         })
 
-        it('should parse HJSON', () => {
+        it('should parse not-JSON', () => {
             assert(obj, 'should obj be defined')
 
             assert.equal(obj.a, 1, 'should property match')
@@ -52,14 +52,14 @@ describe('HJSON', () => {
     })
 
     describe('stringify object', () => {
-        let hjson, obj, json
+        let notJson, obj, json
 
         before(() => {
-            hjson = fs.readFileSync('tests/example.hjson', 'utf8')
+            notJson = fs.readFileSync('example.not-json', 'utf8')
 
-            obj = HJSON.parse(hjson)
+            obj = notJSON.parse(notJson)
 
-            json = HJSON.stringify(obj)
+            json = notJSON.stringify(obj)
         })
 
         it('should stringify object', () => {

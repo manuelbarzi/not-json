@@ -1,23 +1,25 @@
 {
-  "name": "hybrid-json",
-  "version": "0.0.6",
-  "description": "Hybrid JavaScript Object Notation (HJSON) parser / stringifier",
-  "main": "src/HJSON.js",
+  "name": "not-json",
+  "version": "1.0.0",
+  "description": "not JavaScript Object Notation (notJSON) parser / stringifier",
+  "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha tests"
+    "test": "npx mocha ."
   },
   "keywords": [
-    "HJSON",
+    "notjson",
+    "not-json",
+    "not",
+    "json",
     "hybrid",
     "javascript",
     "object",
     "notation",
     "js",
     "node",
-    "JSON",
     "flex",
     "flexible"
   ],

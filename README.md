@@ -1,6 +1,6 @@
-# Hybrid JavaScript Object Notation (HJSON) parser / stringifier
+# not JavaScript Object Notation (notJSON) parser / stringifier
 
-Parses hybrid JSON like:
+Parses not-JSON like:
 
 ```js
 { a: 1, b: "2", c: '3', "d": [1, "2", '3'] }
@@ -9,20 +9,20 @@ Parses hybrid JSON like:
 Installation:
 
 ```sh
-$ npm i hybrid-json
+$ npm i not-json
 ```
 
 Usage:
 
 ```js
-var HJSON = require('hybrid-json')
+var notJSON = require('not-json')
 
-var obj = HJSON.parse('{ a: 1, b: "2", c: \'3\', "d": [1, "2", \'3\'] }')
+var obj = notJSON.parse('{ a: 1, b: "2", c: \'3\', "d": [1, "2", \'3\'] }')
 
 console.log(obj)
 // { a: 1, b: '2', c: '3', d: [ 1, '2', '3' ] }
 
-var json = HJSON.stringify(obj)
+var json = notJSON.stringify(obj)
 
 console.log(json)
 // {"a":1,"b":"2","c":"3","d":[1,"2","3"]}
