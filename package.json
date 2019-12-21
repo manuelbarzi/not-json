@@ -1,7 +1,7 @@
 {
   "name": "not-json",
   "version": "1.0.0",
-  "description": "not JavaScript Object Notation (notJSON) parser / stringifier",
+  "description": "Simple remake of JSON.parse/.stringify that supports non-standard JSON parsing",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -21,12 +21,17 @@
     "js",
     "node",
     "flex",
-    "flexible"
+    "flexible",
+    "non-standard"
   ],
   "author": "manuelbarzi",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manuelbarzi/not-json.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/manuelbarzi/not-json/issues"
+  },
+  "homepage": "https://github.com/manuelbarzi/not-json#readme"
 }

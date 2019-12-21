@@ -1,4 +1,4 @@
-# not JavaScript Object Notation (notJSON) parser / stringifier
+# Simple remake of [JSON.parse/.stringify](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON) that supports non-standard JSON parsing
 
 Parses not-JSON like:
 
