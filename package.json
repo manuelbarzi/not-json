@@ -27,6 +27,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1nside0ut/hybrid-json.git"
+    "url": "git+https://github.com/manuelbarzi/not-json.git"
   }
 }
